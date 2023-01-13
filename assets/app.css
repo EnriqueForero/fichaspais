@@ -1,0 +1,178 @@
+*{
+    margin:0
+}
+
+body {
+    
+    font-family: sans-serif;
+}
+
+#react-entry-point{
+    width: 100%;
+    background-color: #fafafa;
+    min-height: 100vh;
+}
+
+.app{
+
+width: 70%;
+margin:auto;
+text-align: center;
+padding-bottom: 25px;
+}
+
+
+
+.seccion {
+    min-height: 50px;
+    background-color: white;
+    margin-bottom: 20px;
+
+
+}
+
+.seccion-header{
+    text-align: center;
+    color: white;
+    margin-bottom: 20px;
+    padding: 10px;
+}
+
+
+
+.widgets{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #fafafa;
+    margin-bottom: 20px;
+}
+
+
+.widget{
+    width: 45%;
+    min-height: 100px;
+    border: 1px solid lightblue;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    padding:5px;
+    font-size: medium;
+    border-radius: 4px;
+}
+
+.widget-inv{
+    width: 45%;
+    min-height: 100px;
+    border: 1px solid lightblue;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding:10px;
+    font-size: medium;
+    border-radius: 4px;
+}
+
+.list-data{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-bottom: 0.5px solid lightblue;
+    padding: 10px;
+}
+.list-data strong {
+    text-align: left;
+}
+
+.list-data-span{
+    text-align: right;
+}
+.title-table{
+    padding: 20px;
+}
+.title-table h4 {
+    padding: 10px;
+    border-bottom: 0.25px solid lightblue;
+}
+
+
+.header{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-bottom: 5px;
+}
+
+
+.footer{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+/*Responsive  Tabletas*/
+@media screen and (-webkit-min-device-pixel-ratio:0) and (max-width: 1200px) {
+    .images{
+        height: 2.5vh;
+    }
+}
+
+
+/*Responsive phone */
+@media screen and (-webkit-min-device-pixel-ratio:0) and (max-width: 768px) {
+    .app{
+        width:90%;
+    }
+    h1 {
+        font-size: 2rem;
+    }
+    h3 {
+        font-size: 1.3rem;
+    }
+    h4{
+        font-size: 1.3rem;
+    }
+    .widget{
+        max-width: 50%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-size: medium;
+
+    }
+    .widget-inv{
+        max-width: 50%;
+        text-align: center;
+        min-height: 100px;
+        max-height: auto;
+        font-size: medium;
+        
+    }
+
+
+    .images{
+        object-fit: contain;
+        height: 5vh;
+        margin-bottom: 40px;
+        margin-top: 10px;
+
+   }
+    .header {
+        flex-direction: column-reverse;
+        align-content: center;
+        justify-content: center;
+    }
+    #bc-table {
+        font-size: small !important;
+    }
+    #ied-table {
+        font-size: small !important;
+    }
+}
